@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe "Site" do
+  
+  let(:base_title) { "The International eNegotiation Exhibition" }
 
   describe "Home page" do
 
@@ -11,7 +13,7 @@ describe "Site" do
     
     it "should have the title 'Home'" do
       visit '/site/home'
-      expect(page).to have_title('The International eNegotiation Exhibition | Home')
+      expect(page).to have_title("#{base_title} | Home")
     end
   end
   
@@ -24,7 +26,7 @@ describe "Site" do
 
     it "should have the title 'About'" do
       visit '/site/about'
-      expect(page).to have_title('The International eNegotiation Exhibition | About')
+      expect(page).to have_title("#{base_title} | About")
     end
   end
   
@@ -37,7 +39,20 @@ describe "Site" do
 
     it "should have the title 'Meet the Team'" do
       visit '/site/team'
-      expect(page).to have_title('The International eNegotiation Exhibition | Meet the Team')
+      expect(page).to have_title("#{base_title} | Meet the Team")
+    end
+  end
+
+  describe "Contact page" do
+
+    it "should have the content 'Contact Us'" do
+      visit '/site/contact'
+      expect(page).to have_content('Contact Us')
+    end
+
+    it "should have the title 'Contact Us'" do
+      visit '/site/contact'
+      expect(page).to have_title("#{base_title} | Contact Us")
     end
   end
 end
