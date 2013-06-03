@@ -11,9 +11,14 @@ describe "Site" do
       expect(page).to have_content('eNegotiation Exhibition')
     end
     
-    it "should have the title 'Home'" do
+    it "should have the base title" do
       visit '/site/home'
-      expect(page).to have_title("#{base_title} | Home")
+      expect(page).to have_title("#{base_title}")
+    end
+    
+    it "should not have a custom page title" do
+      visit '/site/home'
+      expect(page).not_to have_title("| Home")
     end
   end
   
