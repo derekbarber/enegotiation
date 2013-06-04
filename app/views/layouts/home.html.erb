@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "home-layout", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+</head>
+<body>
+
+  <header class="navbar-wrapper">
+    <div class="container">
+      <div class="navbar navbar-inverse">
+        <%= render :partial => 'layouts/navigation' %>
+      </div>
+    </div>
+  </header>
+
+<%= yield %>
+
+<div class="container">
+  <%= render 'layouts/footer' %>
+</div>
+</body>
+</html>
