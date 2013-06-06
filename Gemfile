@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '4.0.0.rc1'
-gem 'pg', '0.14.1'
+gem 'pg', '0.15.1'
 
 gem 'sass-rails', '~> 4.0.0.rc1'
 gem 'bootstrap-sass', '~> 2.3.1.2'
@@ -36,7 +36,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'
