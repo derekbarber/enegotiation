@@ -1,5 +1,10 @@
 Enegotiation::Application.routes.draw do
 
+  devise_for :admins
+  devise_for :users
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
   get "users/new"
   root to: 'site#home'
 
