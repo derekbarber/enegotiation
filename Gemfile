@@ -6,7 +6,7 @@ gem 'rails', '4.0.0'
 
 gem 'bootstrap-sass', '~> 2.3.2.2'
 gem 'coffee-rails', '~> 4.0.0'
-gem 'compass-rails', :github => 'milgner/compass-rails', :branch => 'rails4'
+gem 'compass-rails', '>= 2.0.alpha.0'
 gem 'devise', '~> 3.0.0.rc' # I think this will allow bundle update to work. We can take off the version restriction once the final version comes out
 
 gem 'globalize3', github: 'svenfuchs/globalize3', branch: 'rails4'
