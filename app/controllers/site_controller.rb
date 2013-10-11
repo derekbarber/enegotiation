@@ -12,4 +12,16 @@ class SiteController < ApplicationController
   
   def contact
   end
+  
+  def faq
+  end
+  
+  def overview
+  end
+  
+  def videos
+  end
+  
+  def rules
+  end
 end
