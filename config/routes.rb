@@ -1,5 +1,11 @@
 Enegotiation::Application.routes.draw do
 
+  resources :participants
+
+  resources :top_standing_entries
+
+  resources :top_standings
+
   devise_for :admins
   devise_for :users
 

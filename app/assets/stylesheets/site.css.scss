@@ -1,5 +1,6 @@
 
 @import "bootstrap";
+@import "bootstrap-responsive";
 
 $grayMediumLight: #eaeaea;
 
@@ -28,6 +29,13 @@ textarea {
   }
 }
 
+.navbar .brand {
+  margin-left: 10px;
+  padding: 10px 10px 0px 10px; /* Increase vertical padding to match navbar links */
+  font-size: 16px;
+  font-weight: bold;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,10 +50,9 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.6em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
   font-weight: normal;
   color: $grayLight;
 }
@@ -55,6 +62,33 @@ p {
   line-height: 1.7em;
 }
 
+
+/* User sign in and sign forms. */
+.border-form-div {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
+  margin-bottom: 10px;
+}
+.border-form-div input[type="text"],
+.border-form-div input[type="email"],
+.border-form-div input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
 
 /* footer */
 

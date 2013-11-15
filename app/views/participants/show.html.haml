@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @participant.name
+%p
+  %b Content:
+  = @participant.content
+%p
+  %b Image:
+  = @participant.image
+%p
+  %b Enabled:
+  = @participant.enabled
+
+= link_to 'Edit', edit_participant_path(@participant)
+\|
+= link_to 'Back', participants_path
