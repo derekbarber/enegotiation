@@ -1,4 +1,4 @@
-class ContactFormController < ApplicationController
+class ContactFormsController < ApplicationController
 
   def new
     @contact_form = ContactForm.new
