@@ -10,7 +10,7 @@ gem 'compass-rails', '>= 2.0.alpha.0'
 gem 'carrierwave'
 gem 'devise'
 
-gem 'globalize3', github: 'svenfuchs/globalize3', branch: 'rails4'
+gem 'globalize', '~> 4.0.0.alpha.2'
 gem 'haml-rails'
 gem 'pg'
 
