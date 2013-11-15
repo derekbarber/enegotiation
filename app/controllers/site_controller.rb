@@ -10,9 +10,6 @@ class SiteController < ApplicationController
   def team
   end
   
-  def contact
-  end
-  
   def faq
   end
   
