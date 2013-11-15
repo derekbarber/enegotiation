@@ -1,0 +1,29 @@
+%h1 Listing top_standing_entries
+
+%table
+  %tr
+    %th Top standing
+    %th Rank
+    %th Player
+    %th Coach
+    %th Country
+    %th Comments
+    %th
+    %th
+    %th
+
+  - @top_standing_entries.each do |top_standing_entry|
+    %tr
+      %td= top_standing_entry.top_standing_id
+      %td= top_standing_entry.rank
+      %td= top_standing_entry.player
+      %td= top_standing_entry.coach
+      %td= top_standing_entry.country
+      %td= top_standing_entry.comments
+      %td= link_to 'Show', top_standing_entry
+      %td= link_to 'Edit', edit_top_standing_entry_path(top_standing_entry)
+      %td= link_to 'Destroy', top_standing_entry, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Top standing entry', new_top_standing_entry_path

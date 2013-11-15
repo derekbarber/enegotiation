@@ -1,0 +1,13 @@
+%h1 Top Standings
+
+%table{:class => 'table table-striped table-bordered'}
+  %tr
+    %th Title
+    %th System
+
+  - @top_standings.each do |top_standing|
+    %tr
+      %td= link_to top_standing.title, top_standing
+      %td= top_standing.system
+%br
+

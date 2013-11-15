@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Top standing:
+  = @top_standing_entry.top_standing_id
+%p
+  %b Rank:
+  = @top_standing_entry.rank
+%p
+  %b Player:
+  = @top_standing_entry.player
+%p
+  %b Coach:
+  = @top_standing_entry.coach
+%p
+  %b Country:
+  = @top_standing_entry.country
+%p
+  %b Comments:
+  = @top_standing_entry.comments
+
+= link_to 'Edit', edit_top_standing_entry_path(@top_standing_entry)
+\|
+= link_to 'Back', top_standing_entries_path
