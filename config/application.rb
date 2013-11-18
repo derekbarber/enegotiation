@@ -21,9 +21,9 @@ module Enegotiation
     # config.i18n.default_locale = :de
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     config.assets.precompile += [ 
-      'home-layout.css.scss',
-      'site.css.scss',
-      'scaffolds.css.scss'
+      'home-layout.css',
+      'site.css',
+      'scaffolds.css'
     ]
   end
 end
