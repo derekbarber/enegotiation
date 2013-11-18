@@ -6,7 +6,7 @@ class TopStandingsController < ApplicationController
 
   def show
     @top_standing = TopStanding.find(params[:id])
-    @top_standing_entries = TopStanding.top_standing_entries.all
+    @top_standing_entries = @top_standing.top_standing_entries
   end
 
 end

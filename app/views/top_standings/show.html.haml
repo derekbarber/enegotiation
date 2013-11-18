@@ -1,17 +1,20 @@
 %p#notice= notice
 
-%p
-  %b Title:
+%h3
   = @top_standing.title
 
 %table{:class => 'table table-striped table-bordered'}
   %tr
     %th Player
     %th Coach
+    %th Country
+    %th Comments
 
   - @top_standing_entries.each do |top_standing_entry|
     %tr
       %td= top_standing_entry.player
-      %td= top_standing.coach
+      %td= top_standing_entry.coach.html_safe
+      %td= top_standing_entry.country
+      %td= top_standing_entry.comments.html_safe
 
 = link_to 'Back', top_standings_path
