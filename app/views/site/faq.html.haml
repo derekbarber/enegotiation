@@ -1,0 +1,110 @@
+- provide(:title, 'FAQ')
+%ul{class: 'breadcrumb'}
+  %li
+    = link_to "Home", root_path
+    <span class="divider">/</span>
+  %li{class: 'active'}
+    FAQ
+
+%h1 FAQ
+
+%div{class:"row-fluid"}
+  %div{class:"span12"}
+    %div{class:"accordion", id:"faq_accordion"}
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question1", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            What does it cost to participate?
+        %div{id:"question1", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            Most of the costs of this exhibition are covered by the Smartsettle researchers. These costs are partially offset by a small exhibition registration fee, which is included in the cost of materials, which you may purchase from the Smartsettle website or through your bookstore. If you download materials, we request that you make a donation of at least $20 (plus $5 for shipping and handling). We also appreciate the conscientious commitment and good sportsmanship of every participant.
+
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question2", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            How much time will this take?
+        %div{id:"question2", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            We expect each participant to diligently prepare for the exhibition, provide good competition for their counterparts, and take the time needed to carefully complete the pre- and post-negotiation questionnaires. How much time the negotiations will take depends on the negotiating parties, and which platform you are using. Negotiating a simple two-party, single-issue case with Smartsettle One will take less time than negotiating a complex scenario with Smartsettle Infinity. To use Smartsettle Infinity to negotiate a complex case, you should expect to spend ten to twenty hours of flex time over a period of several weeks. Coaches should take more time if they have not used Smartsettle before.
+
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question3", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            What else do I need?
+        %div{id:"question3", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            All you need for Smartsettle One is Internet access. For Smartsettle Infinity, specific training materials are available from Smartsettle for little or no cost. Download and install the Infinity client from the Smartsettle website early and try it out to make sure there are no firewall issues.
+
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question4", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            May I play more than one time?
+        %div{id:"question4", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            Yes, you may play as many times as you like.
+
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question5", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            What are the rules?
+        %div{id:"question5", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            See rules.
+
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question6", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            What is "analytical support" and why is it important?
+        %div{id:"question6", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            eNegotiation systems with analytical support are able to model the negotiation problem, identify decision variables, elicit preferences on possible outcomes, and use preference information to display ratings for packages. With a high level of analytical support, Smartsettle Infinity is able to handle constraints and multiple parties and have the ability for the problem representation to evolve during the negotiation. Smartsettle Infinity can use elicited preferences to suggest packages for parties to consider and use optimization to find improvements to a tentative agreement. Improvements will usually have higher scores for both parties.
+
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question7", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            How is the score for an exhibition game calculated?
+        %div{id:"question7", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            %div{class:"accordion-inner"}
+              Your final score will be based on a complex formula that considers both quantitative and qualitative aspects. Scoring formula details are not made available to the competitors. Your primary objective is to achieve a great deal for your own side. Full participants are given access to their scores at the end of the tournament, at which time they will be able to determine the strengths and weaknesses of their own performance in order to plan for improvements during a subsequent round. 
+
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question8", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            Is the best possible outcome the one with the highest raw score?
+        %div{id:"question8", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            Not necessarily. If you achieve a high raw score with a preference representation that does not match your assigned confidential information, you will be penalized. Remember also that, just as in the real world, there is more to negotiations than just winning something for yourself. A good deal for your side must also be good for the other side.
+
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question9", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            How should I set my preferences?
+        %div{id:"question9", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            To achieve a high score, you must set your preferences according to your assigned confidential information. For example, the issue that is most important to you must be assigned the most weight.
+
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question10", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            Can I change my preferences?
+        %div{id:"question10", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            Yes, but there is a deadline after which you may not.
+
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question11", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            What do I do next?
+        %div{id:"question11", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            The first step is to register. You will then be able to login to the site, join a competition and start negotiating.
+
+      %div{class:"accordion-group"}
+        %div{class:"accordion-heading"}
+          %a{class:"accordion-toggle", href: "#question12", data: {'toggle' => 'collapse', 'parent' => "#faq_accordion" }}
+            Who can I ask if my question is not answered here?
+        %div{id:"question12", class:"accordion-body collapse"}
+          %div{class:"accordion-inner"}
+            Contact us!
+

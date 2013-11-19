@@ -29,5 +29,7 @@ Enegotiation::Application.routes.draw do
   match '/terms',      to: 'site#terms', via: 'get'
   match '/privacy',      to: 'site#privacy', via: 'get'
   match '/sitemap',      to: 'site#sitemap', via: 'get'
+  
+  match '/dashboard', to: 'dashboard#index',  via: 'get'
 
 end

@@ -1,4 +1,12 @@
-%p#notice= notice
+%ul{class: 'breadcrumb'}
+  %li
+    = link_to "Home", root_path
+    <span class="divider">/</span>
+  %li{class: 'active'}
+    = link_to "Top Standings", top_standings_path 
+    <span class="divider">/</span>
+  %li
+    = @top_standing.title
 
 %h1
   = @top_standing.title
