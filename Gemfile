@@ -15,8 +15,6 @@ gem 'haml-rails'
 gem 'pg'
 
 gem 'sass-rails', '~> 4.0.0'
-
-gem 'paper_trail', github: 'airblade/paper_trail', branch: 'master'
 gem 'simple_form'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -57,6 +55,7 @@ group :doc do
 end
 
 gem 'rails_12factor', group: :production
+gem 'dotenv-rails', :groups => [:development, :test]
 
 # Use ActiveModel has_secure_password
 #gem 'bcrypt-ruby', '~> 3.0.0'

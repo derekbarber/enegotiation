@@ -1,0 +1,52 @@
+= render partial: "shared/flash_messages", flash: flash
+
+%div{class:"row-fluid"}
+  %div{class:"span3"}
+    %div{class:"well sidebar-nav"}
+      %ul{class:"nav nav-list"}
+        %li{class:"nav-header"}
+          User Progress
+        %li{class:"active"}
+          <a href="#">Dashboard</a>
+        %li
+          <a href="#">Donate</a>
+        %li{class:"nav-header"}
+          Smartsettle One
+        %li
+          <a href="#">Read Introduction</a>
+        %li
+          <a href="#">Watch Training Video</a>
+        %li
+          <a href="#">Review Scenario</a>
+        %li
+          <a href="#">Practice Negotiation</a>
+        %li
+          <a href="#">Real-Life Negotiation</a>
+        %li{class:"nav-header"}
+          Smartsettle Infinity
+        %li
+          <a href="#">Introduction</a>
+        %li
+          <a href="#">Read Directions</a>
+        %li
+          <a href="#">Download Infinity</a>
+        %li
+        <a href="#">Tutorials</a>
+  %div{class:"span6"}
+
+    %h3 Dashboard
+    
+    %p This site is designed to give you a hands-on experience with Smartsettle.
+    
+    %p 
+      To start, we suggest you go through the Smartsettle One course and then once
+      you successfully complete that, continue on with Smartsettle Infinity.
+
+  %div{class:"span3"}
+    %div{class:"well"}
+      %h4 Your Profile
+    
+      %p 
+        = "Name: #{current_user.name}"
+      %p 
+        = "Email: #{current_user.email}"
